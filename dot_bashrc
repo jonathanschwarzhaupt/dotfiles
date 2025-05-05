@@ -158,3 +158,5 @@ fi
 
 # My additions
 set -o vi
+
+eval "$(mise activate bash)"
