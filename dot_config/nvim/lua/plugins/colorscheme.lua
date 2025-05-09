@@ -1,11 +1,11 @@
 return {
 
-	{ "wittyjudge/gruvbox-material.nvim" },
+	{ "folke/tokyonight.nvim" },
 
 	{
 		"LazyVim/LazyVim",
 		opts = {
-			colorscheme = "gruvbox-material",
+			colorscheme = "tokyonight-storm",
 		},
 	},
 }
