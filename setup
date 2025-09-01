@@ -20,7 +20,4 @@ if ! command -v chezmoi >/dev/null; then
     sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://github.com/jonathanschwarzhaupt/dotfiles.git
 fi
 
-# Install zed code editor
-curl -f https://zed.dev/install.sh | sh
-
 exit 0
