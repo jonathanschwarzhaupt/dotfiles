@@ -15,13 +15,12 @@ if [ ! -d "$HOME/.zsh/pure" ]; then
   git clone https://github.com/sindresorhus/pure.git "$HOME/.zsh/pure"
 fi
 
+# Install and apply chezmoi to manage dotfiles
 if ! command -v chezmoi >/dev/null; then
-    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://github.com/jonathanschwarzhaupt/dotfiles.git 
+    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://github.com/jonathanschwarzhaupt/dotfiles.git
 fi
 
-if command -v npm >/dev/null; then
-    echo "Installing Claude Code..."
-    npm install -g @anthropic-ai/claude-code
-fi
+# Install zed code editor
+curl -f https://zed.dev/install.sh | sh
 
 exit 0

@@ -1,0 +1,14 @@
+[font]
+size = 14
+
+[font.normal]
+family = "UbuntuMono Nerd Font"
+
+[general]
+import = ["~/.config/alacritty/themes/themes/github_dark.toml"]
+
+[terminal]
+shell = "/bin/zsh"
+
+[env]
+TERM = "alacritty-direct"
