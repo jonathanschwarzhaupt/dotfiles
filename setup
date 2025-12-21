@@ -3,7 +3,7 @@
 set -euo pipefail
 
 if command -v zsh >/dev/null; then
-    sudo chsh -s $(command -v zsh) $USER
+  sudo chsh -s $(command -v zsh) $USER
 fi
 
 if [ ! -d "$HOME/.zsh" ]; then
@@ -17,7 +17,12 @@ fi
 
 # Install and apply chezmoi to manage dotfiles
 if ! command -v chezmoi >/dev/null; then
-    sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://github.com/jonathanschwarzhaupt/dotfiles.git
+  sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply https://github.com/jonathanschwarzhaupt/dotfiles.git
+fi
+
+# Install claude code for Linux and MacOS
+if ! command -v claude >/dev/null; then
+  curl -fsSL https://claude.ai/install.sh | bash
 fi
 
 exit 0
