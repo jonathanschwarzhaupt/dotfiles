@@ -1,0 +1,8 @@
+[".local/bin/mise"]
+type = "file"
+executable = true
+{{ if eq .chezmoi.os "darwin" -}}
+url = "https://mise.jdx.dev/mise-latest-macos-{{ .chezmoi.arch }}"
+{{ else -}}
+url = "https://mise.jdx.dev/mise-latest-linux-{{ .chezmoi.arch }}"
+{{ end -}}
