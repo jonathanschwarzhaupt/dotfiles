@@ -56,10 +56,13 @@ if command -v fzf > /dev/null ; then
   source <(fzf --zsh)
 fi
 
+if command -v kubectl > /dev/null ; then
+  source <(kubectl completion zsh)
+fi
+
 if command -v flux > /dev/null ; then
   source <(flux completion zsh)
 fi
-
 
 if command -v mise > /dev/null ; then
   source <(mise completion zsh)
