@@ -2,7 +2,7 @@
 filetype plugin on
 
 " Enable indentation
-filteype indent on
+filetype indent on
 
 " Set the default indentation to 2 spaces for all files
 set tabstop=2
