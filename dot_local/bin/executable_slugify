@@ -1,0 +1,5 @@
+#!/bin/sh
+slug=$(cat | tr '[:upper:]' '[:lower:]' | tr -c 'a-z0-9\n' '-' | tr -s '-')
+slug=${slug#-}
+slug=${slug%-}
+printf '%s\n' "$slug"
