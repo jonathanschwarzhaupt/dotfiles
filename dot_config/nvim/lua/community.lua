@@ -19,6 +19,6 @@ return {
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.pack.yaml" },
-  { import = "astrocommunity.scrolling.cinnamon-nvim" }
-
+  { import = "astrocommunity.scrolling.cinnamon-nvim" },
+  { import = "astrocommunity.ai.codecompanion-nvim" }
 }
