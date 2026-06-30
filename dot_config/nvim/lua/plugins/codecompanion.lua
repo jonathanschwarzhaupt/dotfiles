@@ -2,6 +2,11 @@ return {
   {
     "olimorris/codecompanion.nvim",
     opts = {
+      interactions = {
+        chat = {
+          adapter = "codex",
+        },
+      },
       adapters = {
         acp = {
           codex = function()
