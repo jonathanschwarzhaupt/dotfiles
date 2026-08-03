@@ -78,6 +78,7 @@ alias k=kubectl
 alias gp="git pull"
 alias gs="git status"
 alias lg=lazygit
+alias tf=terraform
 
 if command -v bat > /dev/null ; then
   alias cat="bat"
