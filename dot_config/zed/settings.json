@@ -7,6 +7,16 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "diagnostics": {
+    "inline": {
+      "enabled": true
+    }
+  },
+  "project_panel": {
+    "diagnostic_badges": true,
+    "git_status_indicator": true,
+    "dock": "left"
+  },
   "agent": {
     "inline_assistant_model": {
       "provider": "zed.dev",
@@ -18,6 +28,7 @@
     }
   },
   "telemetry": {
+    "diagnostics": false,
     "metrics": false
   },
   "vim_mode": true,
